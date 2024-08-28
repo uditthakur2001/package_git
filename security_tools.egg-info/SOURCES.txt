@@ -1,7 +1,0 @@
-README.md
-setup.py
-security_tools.egg-info/PKG-INFO
-security_tools.egg-info/SOURCES.txt
-security_tools.egg-info/dependency_links.txt
-security_tools.egg-info/entry_points.txt
-security_tools.egg-info/top_level.txt
