@@ -7,4 +7,8 @@ This package installs OWASP ZAP, Gitleaks, and TruffleHog on a Windows machine u
 To use this package, install it locally and run the command:
 
 ```bash
+pip install .
+```
+```bash
 setup-security-tools
+```
