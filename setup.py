@@ -1,13 +1,21 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
-    name='setup_security_tools',
+    name='security_tools',
     version='0.1',
-    py_modules=['setup_security_tools'],
+    packages=find_packages(),
+    install_requires=[
+        # List any external dependencies here
+    ],
     entry_points={
         'console_scripts': [
-            'setup-security-tools = setup_security_tools:main',
+            'install-security-tools=security_tools.install_tools:main',
         ],
     },
-    install_requires=[],
+    description='A package to install security tools like OWASP ZAP, TruffleHog, and Gitleaks',
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
+    author='Your Name',
+    author_email='your.email@example.com',
+    url='https://github.com/yourusername/security_tools',
 )
