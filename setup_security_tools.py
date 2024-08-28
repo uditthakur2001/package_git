@@ -38,7 +38,7 @@ def install_trufflehog():
 
 def main():
     # Run as Administrator
-    if not subprocess.run(['whoami', '/groups'], capture_output=True, text=True).stdout.lower().contains("administrators"):
+    if 'administrators' not in subprocess.run(['whoami', '/groups'], capture_output=True, text=True).stdout.lower():
         print("Please run this script as an Administrator!")
         sys.exit(1)
 
